@@ -40,11 +40,11 @@ const questions = [{
     name: "Contributor"
 }, {
     type: "input",
-    message: "Who contibuted to this project ?"
+    message: "Who contibuted to this project ?",
     name: "Contributors"
 }, {
     type: "input",
-    message: "link of Github of Contibutors"
+    message: "link of Github of Contibutors",
     name: "ContributorGithubLink"
 }, {
     type: "input",
