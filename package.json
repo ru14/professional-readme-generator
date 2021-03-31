@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ru14/professional-readme-generator/issues"
   },
-  "homepage": "https://github.com/ru14/professional-readme-generator#readme"
+  "homepage": "https://github.com/ru14/professional-readme-generator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
