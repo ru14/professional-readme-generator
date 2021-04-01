@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 
-const generateMarkdown = require('./util/generatorMarkdown')
+const generateMarkdown = require('./utils/generateMarkdown')
 const writeFileAsync = util.promisify(fs.writeFile)
 
 // TODO: Create an array of questions for user input
@@ -77,12 +77,7 @@ const questions = [{
     message: "list of Features in your project",
     name: "Features",
     validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
-}, {
-    type: "input",
-    message: "",
-    name: "Badges"
-    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
-},
+}, 
 ];
 inquirer
     .prompt([
