@@ -31,7 +31,7 @@ The following necessary dependencies mut be installed to run the application. ${
 In order to use this app, ${data.Usage}
 
 ## Credits
-List your contributors, if any, with links to their GitHub profiles.
+List your contributors with links to their GitHub profiles.
 Contributers: ${data.Contributor}
 Link of github: ${data.ContributorGithubLink}
 

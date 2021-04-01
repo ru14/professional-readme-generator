@@ -9,63 +9,79 @@ const writeFileAsync = util.promisify(fs.writeFile)
 const questions = [{
     type: "input",
     message: "What is the title of the project?",
-    name: "Title"
+    name: "Title",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "What is the project about? Give a detailed description of your project.",
-    name: "Description"
+    name: "Description",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "Table of Contents",
-    name: "Table of Contents"
+    name: "Table of Contents",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "What does the user need to install to run this app (ie..dependencies)?",
-    name: "Installation"
+    name: "Installation",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "how is the App used ? Give instructions",
-    name: "Usage"
+    name: "Usage",
+   // choices: "",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "What License is being used? (ie...MIT)",
-    name: "License"
+    name: "License",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "What Commands are needed to test this app?",
-    name: "Tests"
+    name: "Tests",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "Are there Any Contibutors? ",
-    name: "Contributor"
+    name: "Contributor",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "Who contibuted to this project ?",
-    name: "Contributors"
+    name: "Contributors",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "link of Github of Contibutors",
-    name: "ContributorGithubLink"
+    name: "ContributorGithubLink",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "Contact info for inquiries.",
-    name: "Questions"
+    name: "Questions",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "what is yourGithub username",
-    name: "Username"
+    name: "Username",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "What is your email address?",
-    name: "Email"
+    name: "Email",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "list of Features in your project",
-    name: "Features"
+    name: "Features",
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 }, {
     type: "input",
     message: "",
     name: "Badges"
+    validate: (value) => {if (value) {return true} else {return "i need value to continue"}},
 },
 ];
 inquirer
