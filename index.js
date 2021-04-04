@@ -18,23 +18,23 @@ const questions = [{
 }, {
     type: "input",
     message: "Table of Contents",
-    name: "Table of Contents",
+    name: "TableOfContents",
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
 }, {
     type: "input",
     message: "What does the user need to install to run this app (ie..dependencies)?",
-    name: "Installation",
+    name: "Dependencies",
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
 }, {
     type: "input",
     message: "how is the App used ? Give instructions",
     name: "Usage",
-    choices: ['MIT License', 'GPl License', 'Apache License', 'Gmi License', 'N/A'],
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
 }, {
-    type: "input",
+    type: "list",
     message: "What License is being used? (ie...MIT)",
     name: "License",
+    choices: ['MIT License', 'GPl License', 'Apache License', 'Ibm License', 'N/A'],
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
 }, {
     type: "input",
@@ -42,7 +42,7 @@ const questions = [{
     name: "Tests",
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
 }, {
-    type: "input",
+    type: "confirm",
     message: "Are there Any Contibutors? ",
     name: "Contributor",
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
@@ -75,8 +75,8 @@ const questions = [{
     type: "input",
     message: "list of Features in your project",
     name: "Features",
-    validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
-},
+    validate: (value) => { if (value) { return true } else { return "i need value to continue" } }
+}
 ];
 
 
@@ -84,6 +84,7 @@ const questions = [{
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function (err) {
+        console.log("writeFile");
         console.log(fileName)
         console.log(data)
         if (err) {
@@ -98,13 +99,19 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then(function (data) {
+            //console.log(data)
             // Use user feedback for... whatever!!
-            writeToFile("ReadME.md", generateMarkdown(data));
+            let response = generateMarkdown(data)
+           // console.log(response);
+          writeToFile("ReadME.md", response);
+            
         })
         .catch(error => {
             if (error.isTtyError) {
+                console.log("Prompt couldnt be rendered in current enviroment:" + error)
                 // Prompt couldn't be rendered in the current environment
             } else {
+                console.log("109Error: " + error)
                 // Something else went wrong
             }
         });
