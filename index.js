@@ -16,7 +16,7 @@ const questions = [{
     name: "Description",
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
 }, {
-    type: "input",
+    type: "confirm",
     message: "Table of Contents",
     name: "TableOfContents",
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },

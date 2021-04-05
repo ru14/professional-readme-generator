@@ -1,8 +1,8 @@
-## y
-https://github.com/y/y
+## REAdME generator
+https://github.com/ru14/REAdME generator
 
 ## Description
-y
+This app allow developers to create your a professional README file in that is clean and efficient and easy to use.
 ## Table of Contents.
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,15 +12,15 @@ y
 - [Features](#features)
 - [Question](#question)
 ## Installation
-The following necessary dependencies mut be installed to run the application. y
+The following necessary dependencies mut be installed to run the application. Inquire, fs, util
 
 ## Usage
-In order to use this app, y
+In order to use this app, you just run in in terminal
 
 ## Credits
 List your contributors with links to their GitHub profiles.
-Contributers: true
-Link of github: y
+Contributers: false
+Link of github: na
 
 
   ## License
@@ -29,13 +29,13 @@ Link of github: y
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Tests
-The following in needed to run the test : y
+The following in needed to run the test : na
 
 ## Badges
 
 ## Features
-List of features in this project : y
+List of features in this project : na
 
 ## Question
-If you have any question about Repo, open an issue or contact y
+If you have any question about Repo, open an issue or contact ragilove2@gmail.com
 

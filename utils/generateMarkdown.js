@@ -75,7 +75,6 @@ ${renderLicenseSection(data.License)}
 ## Tests
 The following in needed to run the test : ${data.Tests}
 
-## Badges
 
 ## Features
 List of features in this project : ${data.Features}
