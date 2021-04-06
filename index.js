@@ -15,12 +15,8 @@ const questions = [{
     message: "What is the project about? Give a detailed description of your project.",
     name: "Description",
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
-}, {
-    type: "confirm",
-    message: "Table of Contents",
-    name: "TableOfContents",
-    validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
-}, {
+},
+ {
     type: "input",
     message: "What does the user need to install to run this app (ie..dependencies)?",
     name: "Dependencies",
