@@ -36,12 +36,8 @@ const questions = [{
     name: "License",
     choices: ['MIT License', 'GPl License', 'Apache License', 'Ibm License', 'N/A'],
     validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
-}, {
-    type: "input",
-    message: "What Commands are needed to test this app?",
-    name: "Tests",
-    validate: (value) => { if (value) { return true } else { return "i need value to continue" } },
-}, {
+}, 
+{
     type: "confirm",
     message: "Are there Any Contibutors? ",
     name: "Contributor",
